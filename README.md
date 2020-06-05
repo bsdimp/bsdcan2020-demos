@@ -10,11 +10,11 @@ I've included a couple of other images than what I had in my talk.
 
 ## Links
 
-TUHS: https://www.tuhs.org/
-Historical Unix Git Repo: https://github.com/dspinellis/unix-history-repo
-The Incredible Machine: https://www.youtube.com/watch?v=_iiQtdXMnBg
-PDP 7 hardware booting Unix: https://www.youtube.com/watch?v=pvaPaWyiuLA
-Bitsavers: http://bitsavers.org/
+ * TUHS: https://www.tuhs.org/
+ * Historical Unix Git Repo: https://github.com/dspinellis/unix-history-repo
+ * The Incredible Machine: https://www.youtube.com/watch?v=_iiQtdXMnBg
+ * PDP 7 hardware booting Unix: https://www.youtube.com/watch?v=pvaPaWyiuLA
+ * Bitsavers: http://bitsavers.org/
 
 ## simh
 
