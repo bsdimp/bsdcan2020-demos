@@ -77,53 +77,53 @@ V2 or V3 (there's ambiguity in the time_t used since it reset the base every
 year). You can get the sources from https://github.com/DoctorWkt/unix-jun72 if
 you'd like to play.
 
-> % cd v1
-> % pdp11 simh.cfg
->
-> PDP-11 simulator V3.9-0
-> Disabling CR
-> Disabling XQ
-> RF: buffering file in memory
-> simh.cfg> att tc tape
-> File open error
-> Listening on port 5555 (socket 6)
->
-> :login: root
-> root
-> # ls
-> bin
-> dev
-> etc
-> tmp
-> # ls -l
-> total    5
->  43 sdrwr-  2 root    620 Jan  1 00:00:00 bin
->  42 sdrwr-  2 root    250 Jan  1 00:00:00 dev
-> 104 sdrwr-  2 root    110 Jan  1 00:00:00 etc
-> 114 sdrwr-  2 root     50 Jan  1 00:00:00 tmp
-> # ^E
-> Simulation stopped, PC: 007332 (MOV (SP)+,25244)
-> sim> quit
-> Goodbye
-> RF: writing buffer to file
-> %
+    % cd v1
+    % pdp11 simh.cfg
+    
+    PDP-11 simulator V3.9-0
+    Disabling CR
+    Disabling XQ
+    RF: buffering file in memory
+    simh.cfg> att tc tape
+    File open error
+    Listening on port 5555 (socket 6)
+    
+    :login: root
+    root
+    # ls
+    bin
+    dev
+    etc
+    tmp
+    # ls -l
+    total    5
+     43 sdrwr-  2 root    620 Jan  1 00:00:00 bin
+     42 sdrwr-  2 root    250 Jan  1 00:00:00 dev
+    104 sdrwr-  2 root    110 Jan  1 00:00:00 etc
+    114 sdrwr-  2 root     50 Jan  1 00:00:00 tmp
+    # ^E
+    Simulation stopped, PC: 007332 (MOV (SP)+,25244)
+    sim> quit
+    Goodbye
+    RF: writing buffer to file
+    %
 
 ## V5 Unix
 
 This image was pulled from the TUHS archive at https://www.tuhs.org/Archive/Distributions/Research/Dennis_v5/
 
-> cd v5
-> pdp11 boot.ini
->
-> PDP-11 simulator V3.9-0
-> Disabling XQ
-> @unix
->
-> ;login: root
-> # ^E
-> Simulation stopped, PC: 001726 (MOV (SP)+,177776)
-> sim> quit
-> Goodbye
+    % cd v5
+    pdp11 boot.ini
+    
+    PDP-11 simulator V3.9-0
+    Disabling XQ
+    @unix
+    
+    ;login: root
+    # ^E
+    Simulation stopped, PC: 001726 (MOV (SP)+,177776)
+    sim> quit
+    Goodbye
 
 You need to type 'unix' at the @ prompt and then login as root.
 
@@ -133,31 +133,31 @@ V5 only exists as this image. There's no installer.
 
 I've included a pre-installed image. You can find the full install instructions at http://gunkies.org/wiki/Installing_Unix_v6_(PDP-11)_on_SIMH which I did for my talk. I've also included the right tapes.
 
-> cd v6
-> pdp11 boot.ini
->
-> PDP-11 simulator V3.9-0
-> Disabling XQ
-> LPT: creating new file
-> Listening on port 5555 (socket 8)
-> @unix
->
-> login: root
-> # ls
-> bin
-> dev
-> etc
-> hpunix
-> lib
-> mnt
-> rkunix
-> rpunix
-> tmp
-> unix
-> usr
-> # ^E
-> Simulation stopped, PC: 002650 (MOV (SP)+,177776)
-> sim> quit
-> Goodbye
+    % cd v6
+    pdp11 boot.ini
+    
+    PDP-11 simulator V3.9-0
+    Disabling XQ
+    LPT: creating new file
+    Listening on port 5555 (socket 8)
+    @unix
+
+    login: root
+    # ls
+    bin
+    dev
+    etc
+    hpunix
+    lib
+    mnt
+    rkunix
+    rpunix
+    tmp
+    unix
+    usr
+    # ^E
+    Simulation stopped, PC: 002650 (MOV (SP)+,177776)
+    sim> quit
+    Goodbye
 
 You need to type 'unix' at the @ prompt and then login as root.
