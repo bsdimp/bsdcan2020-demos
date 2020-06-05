@@ -29,42 +29,42 @@ You can find the reconstructed sources in the tuhs archive, or via github at htt
 
 I didn't build graphics2 support into my simh, so the config script fails to find them.
 
-> cd pdp7-unix
-> pdp7 unixv0.simh
->
-> PDP-7 simulator V4.0-0 Current        git commit id: d40268d1
-> CPU	idle disabled
-> 	8KW, EAE
-> pdp7/unixv0.simh-13> att rb image.fs
-> RB: buffering file in memory
-> pdp7/unixv0.simh-18> att -U g2in 12345
-> Listening on port 12345
-> pdp7/unixv0.simh-25> set g2in disabled
-> Command not allowed
-> pdp7/unixv0.simh-27> set graphics2 enabled
-> Non-existent device
-> pdp7/unixv0.simh-28> set graphics2b enabled
-> Non-existent device
-> pdp7/unixv0.simh-29> set graphics2c enabled
-> Non-existent device
-> pdp7/unixv0.simh-30> set graphics2d enabled
-> Non-existent device
-> PDP-7 simulator configuration
->
-> CPU	idle disabled
-> CLK	60Hz, devno=00
-> PTR	devno=01
-> PTP	devno=02
-> TTI	devno=03
-> TTO	devno=04
-> LPT	disabled
-> DRM	disabled
-> RB	devno=71
-> DT	disabled
-> G2OUT	disabled
-> G2IN	disabled
->
-> login:
+    % cd pdp7-unix
+    % pdp7 unixv0.simh
+    
+    PDP-7 simulator V4.0-0 Current        git commit id: d40268d1
+    CPU	idle disabled
+     	8KW, EAE
+    pdp7/unixv0.simh-13> att rb image.fs
+    RB: buffering file in memory
+    pdp7/unixv0.simh-18> att -U g2in 12345
+    Listening on port 12345
+    pdp7/unixv0.simh-25> set g2in disabled
+    Command not allowed
+    pdp7/unixv0.simh-27> set graphics2 enabled
+    Non-existent device
+    pdp7/unixv0.simh-28> set graphics2b enabled
+    Non-existent device
+    pdp7/unixv0.simh-29> set graphics2c enabled
+    Non-existent device
+    pdp7/unixv0.simh-30> set graphics2d enabled
+    Non-existent device
+    PDP-7 simulator configuration
+    
+    CPU	idle disabled
+    CLK	60Hz, devno=00
+    PTR	devno=01
+    PTP	devno=02
+    TTI	devno=03
+    TTO	devno=04
+    LPT	disabled
+    DRM	disabled
+    RB	devno=71
+    DT	disabled
+    G2OUT	disabled
+    G2IN	disabled
+    
+    login:
 
 to exit simh, hit ^E. This will get you back to the simh> prompt. You can then quit. If you'd like to login and play around, there's an account 'dmr' with a password of 'dmr'.
 
