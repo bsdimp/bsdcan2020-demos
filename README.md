@@ -12,10 +12,10 @@ I've included a couple of other images than what I had in my talk.
 
 Unfortunately, the pdp-7 in the pkg simh doesn't work. You'll need to build your own:
 
-> git clone https://github.com/philbudne/simh
-> cd simh
-> make pdp7 pdp11
-> sudo cp -p BIN/pdp7 BIN/pdp11 /usr/local/bin
+    % git clone https://github.com/philbudne/simh
+    % cd simh
+    % make pdp7 pdp11
+    % sudo cp -p BIN/pdp7 BIN/pdp11 /usr/local/bin
 
 will give you updated binaries. You'll need to build it in special ways to support the graphics card and/or network.
 
